@@ -1,0 +1,32 @@
+li:has(a[title]) {
+    border-color: pink;
+}
+
+li:has(a[href*="contact"]) {
+    border-color: orange;
+}
+li:has(a[href^="https"]) {
+    border-color: green;
+}
+
+a {
+    padding: 0.5em;
+    display: block;
+}
+
+a[href="/contact"] {
+    border-color: orange;
+}
+
+li {
+    border-width: 5px;
+    border-style: solid;
+    margin: 5px;
+    list-style-type: none;
+    border-color: grey;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
