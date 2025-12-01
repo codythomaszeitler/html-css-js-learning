@@ -1,0 +1,104 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Layout */
+
+ul {
+  list-style: circle;
+
+}
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+  line-height: 1.5em;
+  letter-spacing: .05em;
+}
+
+/* header and footer */
+
+section h2+p {
+  text-indent: 2rem;
+}
+
+header {
+  border-bottom: 5px solid #aa6666;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  text-align: center;
+}
+
+nav>ul>li:has(a) {
+  border-width: 0.1rem;
+  border-color: #aa6666;
+  border-style: solid;
+  height: 4rem;
+  margin: 1rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 1000;
+}
+
+nav>ul>li>a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #aa6666;
+}
+
+nav>ul:has(li > a) {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+
+section a::after {
+  background-image: url(./external-link-52.png);
+  background-size: 0.8rem 0.8rem;
+  background-position: center;
+  display: inline-flex;
+  margin-left: 0.2rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  content: '';
+}
+
+a:visited {
+  color: #aa6666;
+}
+
+a:hover {
+  color: #aa6666;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #aa6666;
+  text-decoration: none;
+  outline: none;
+}
