@@ -1,3 +1,7 @@
+:root {
+  --header-height: 75px;
+}
+
 /* Put any custom CSS styles here.  */
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
 body {
@@ -25,3 +29,64 @@ body {
   color: #000;
   font-weight: bold;
 }
+
+.main {
+  display: flex;
+}
+
+/* I mean there is no reason */
+.overall-ratings {
+  flex: 1;
+  position: sticky;
+  top: var(--header-height);
+  height: 250px;
+  /* background-color: red; */
+  margin: 50px;
+}
+
+.ratings {
+  margin-top: var(--header-height);
+  flex: 1.5;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating-text {}
+
+.loading-bar {}
+
+
+.ratings-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 2fr 3fr .5fr;
+  column-gap: 20px;
+}
+
+.rating-percentage {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rating-bar-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.rating-bar {
+  position: relative;
+  background-color: green;
+  border-radius: 20px;
+  height: 50%;
+  flex: 1 0 100%
+}
+
+.gray-rating-bar { 
+  position: absolute;
+
+}
+
+/* Is there a better way to think about this? Like making it a */
